@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+let mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +11,6 @@ const mix = require('laravel-mix');
  |
  */
 
-// mix.copy('node_modules/@fortawesome/fontawesome-pro/scss', 'resources/sass/fontawesome-pro');
-mix.copy('node_modules/@fortawesome/fontawesome-pro/webfonts', 'public/fonts');
-
-mix.sass('resources/sass/app.scss', 'public/css');
+mix.sass('resources/assets/sass/app.scss', 'public/css')
+    .babel(['resources/assets/js/navigation.js'], 'public/js/scripts.js')
+    .version();
