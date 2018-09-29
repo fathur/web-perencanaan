@@ -13,4 +13,55 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('agenda','AgendaController@index');
+Route::prefix('profil')->group(function () {
+    Route::get('organisasi', 'ProfileController@organization')->name('organization.show');
+    Route::get('tupoksi', 'ProfileController@tasks')->name('tasks.show');
+});
+
+Route::prefix('berita')->group(function () {
+    Route::get('/', 'NewsController@index')->name('news.index');
+    Route::get('{newsSlug}', 'NewsController@show')->name('news.show');
+});
+
+Route::prefix('agenda')->group(function () {
+    Route::get('/', 'AgendaController@index')->name('agenda.index');
+    Route::get('{agendaSlug}', 'AgendaController@show')->name('agenda.show');
+});
+
+Route::prefix('produk')->group(function () {
+    Route::get('hukum', 'ProductController@laws');
+    Route::get('hukum/{productSlug}', 'ProductController@showLaw');
+
+    Route::get('pedoman', 'ProductController@handBooks');
+    Route::get('pedoman/{productSlug}', 'ProductController@showHandBook');
+
+    Route::get('panduan', 'ProductController@guidelines');
+    Route::get('panduan/{productSlug}', 'ProductController@showGuideline');
+
+    Route::get('profil', 'ProductController@profiles');
+    Route::get('profil/{productSlug}', 'ProductController@showProfile');
+
+    Route::get('kegiatan', 'ProductController@activities');
+    Route::get('kegiatan/{productSlug}', 'ProductController@showActivity');
+
+    Route::get('buletin', 'ProductController@bulletins');
+    Route::get('buletin/{productSlug}', 'ProductController@showBulletin');
+
+});
+
+Route::prefix('galeri')->group(function () {
+    Route::get('foto', 'GalleryController@photos')->name('gallery.photo.index');
+    Route::get('foto/{photoId}', 'GalleryController@showPhoto');
+
+    Route::get('video', 'GalleryController@videos');
+    Route::get('video/{videoId}', 'GalleryController@showVideo');
+
+    Route::get('poster', 'GalleryController@posters');
+    Route::get('poster/{posterId}', 'GalleryController@showPoster');
+
+});
+
+Route::get('faq', 'FaqController@index');
+Route::get('kontak', 'ContactController@show');
+
+

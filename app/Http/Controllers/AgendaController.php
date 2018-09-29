@@ -18,5 +18,13 @@ class AgendaController extends Controller
         $agenda = Agenda::published()->get();
 
         dd($agenda[0]->acf->dateTimePicker('date'));
+
+        return view('agenda.index');
+
+    }
+
+    public function show($slug)
+    {
+        return view('agenda.show');
     }
 }
