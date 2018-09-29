@@ -1,19 +1,27 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: fathur
- * Date: 29/09/18
- * Time: 10.59
- */
 
 namespace App\Http\Controllers;
 
+
+use App\Model\Agenda;
+use Carbon\Carbon;
+use Corcel\Model\Post;
 
 class HomeController extends Controller
 {
 
     public function index()
     {
-        return view('home.index');
+
+
+        $news = Post::with(['author','thumbnail'])->published()
+            ->orderBy('post_date','desc')
+            ->take(3)->get();
+
+
+        $agendas = Agenda::published()
+            ->take(3)->get();
+
+        return view('home.index', compact('news','agendas'));
     }
 }
