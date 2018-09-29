@@ -11,6 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/assets/sass/app.scss', 'public/css')
+mix.copy('node_modules/@fortawesome/fontawesome-pro/webfonts','public/fonts/vendor/fontawesome-pro/')
+    .copy('node_modules/@fortawesome/fontawesome-pro/scss','resources/assets/sass/fontawesome-pro/')
+    .sass('resources/assets/sass/app.scss', 'public/css')
     .babel(['resources/assets/js/navigation.js'], 'public/js/scripts.js')
     .version();
