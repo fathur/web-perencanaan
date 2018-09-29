@@ -10,9 +10,9 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-mix.copy('node_modules/@fortawesome/fontawesome-pro/webfonts','public/fonts/vendor/fontawesome-pro/')
-    .copy('node_modules/@fortawesome/fontawesome-pro/scss','resources/assets/sass/fontawesome-pro/')
+//  .copy('node_modules/@fortawesome/fontawesome-pro/scss','resources/assets/sass/fontawesome-pro/')
+//
+mix.copy('node_modules/@fortawesome/fontawesome-pro/webfonts', 'resources/assets/fonts/')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .babel(['resources/assets/js/navigation.js'], 'public/js/scripts.js')
     .version();

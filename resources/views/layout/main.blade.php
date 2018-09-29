@@ -14,7 +14,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -100,6 +100,7 @@
 
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
+        <i class="fal fa-calendar"></i>
     </div>
     <div class="jumbotron">
     </div>
