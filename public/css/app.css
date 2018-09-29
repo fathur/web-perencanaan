@@ -6598,3 +6598,21 @@ readers do not read off random characters that represent icons */
   font-weight: 300;
 }
 
+body {
+  padding-top: 60px;
+}
+
+nav {
+  background: #f5b335;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+  top: -60px;
+}
+
