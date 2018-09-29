@@ -1,0 +1,16 @@
+@import "../variables";
+
+.footer {
+
+    &.footer-top {
+        color: $white;
+        padding: 15px 0;
+        background-color: lighten($black, 5%);
+    }
+
+    &.footer-bottom {
+        color: $white;
+        padding: 5px 0;
+        background-color: $black;
+    }
+}

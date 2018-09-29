@@ -1,4 +1,4 @@
-/*!
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);/*!
  * Font Awesome Pro 5.3.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
  */
@@ -6598,21 +6598,79 @@ readers do not read off random characters that represent icons */
   font-weight: 300;
 }
 
-body {
-  padding-top: 60px;
-}
-
-nav {
+nav.navbar-pu {
   background: #f5b335;
-  height: 60px;
+  height: 110px;
   position: fixed;
   top: 0;
   -webkit-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
   width: 100%;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.61);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.61);
+  font-family: "Raleway", sans-serif;
+}
+
+nav.navbar-pu a {
+  text-decoration: none;
+  color: black;
+}
+
+nav.navbar-pu .navbar-brand > img {
+  width: 80px;
+  position: relative;
+  float: left;
+}
+
+nav.navbar-pu .navbar-brand .brand-text {
+  width: 300px;
+  margin-left: 15px;
+  float: left;
+}
+
+nav.navbar-pu .navbar-brand .brand-text .title {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+
+nav.navbar-pu .navbar-brand .brand-text .subtitle {
+  display: block;
+}
+
+nav.navbar-pu .navbar-nav {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav.navbar-pu .navbar-nav > li > a {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .nav-up {
-  top: -60px;
+  top: -110px !important;
+}
+
+body {
+  padding-top: 110px;
+  background-color: #FDFFFC;
+}
+
+.wrapper-content {
+  min-height: 500px;
+}
+
+.footer.footer-top {
+  color: #FDFFFC;
+  padding: 15px 0;
+  background-color: #022440;
+}
+
+.footer.footer-bottom {
+  color: #FDFFFC;
+  padding: 5px 0;
+  background-color: #011627;
 }
 

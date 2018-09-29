@@ -1,0 +1,10 @@
+@import "../variables";
+
+body {
+    padding-top: $nav-height;
+    background-color: $white;
+}
+
+.wrapper-content {
+    min-height: 500px;
+}

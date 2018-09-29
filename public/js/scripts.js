@@ -1,4 +1,5 @@
 // Hide Navbar on scroll down
+// https://codepen.io/fbmiranda/pen/edqgxm
 var didScroll = void 0;
 var lastScrollTop = 0;
 var delta = 5;

@@ -1,16 +1,64 @@
-body {
-    padding-top: 60px;
-}
+@import "../variables";
 
-nav {
+nav.navbar-pu {
+
     background: #f5b335;
-    height: 60px;
+    height: $nav-height;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
+
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.61);
+
+    font-family: "Raleway", sans-serif;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar-brand {
+
+        & > img {
+            width: 80px;
+            position: relative;
+            float: left;
+        }
+
+        .brand-text {
+            width: 300px;
+            margin-left: 15px;
+            float: left;
+
+            .title {
+                display: block;
+                font-size: 20px;
+                font-weight: 900;
+                padding-bottom: 5px;
+            }
+
+            .subtitle {
+                display: block;
+            }
+        }
+    }
+
+    .navbar-nav {
+        text-transform: uppercase;
+        font-weight: 500;
+
+        & > li {
+
+            & > a {
+                padding-top: $nav-padding-anchor;
+                padding-bottom: $nav-padding-anchor;
+
+            }
+        }
+    }
 }
 
 .nav-up {
-    top: -60px;
+    top: -$nav-height !important;
 }
