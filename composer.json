@@ -25,7 +25,8 @@
     },
     "autoload": {
         "files": [
-            "app/helpers.php"
+            "helpers/helper.php",
+            "helpers/wp-formatting.php"
         ],
         "classmap": [
             "database/seeds",

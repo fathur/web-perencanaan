@@ -9,16 +9,20 @@
 namespace App\Http\Controllers;
 
 
+use Corcel\Model\Page;
+
 class ProfileController extends Controller
 {
 
     public function organization()
     {
-        return view('profile.show');
+        $post = Page::slug('organisasi')->first();
+        return view('profile.show', compact('post'));
     }
 
     public function tasks()
     {
-        return view('profile.show');
+        $post = Page::slug('tupoksi')->first();
+        return view('profile.show', compact('post'));
     }
 }
