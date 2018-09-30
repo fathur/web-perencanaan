@@ -84,4 +84,55 @@
             }
         }
     }
+
+    .calendar-show {
+        line-height: 2em;
+        font-size: 16px;
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+
+            &:first-of-type:first-letter {
+                font-size: 100px;
+                float: left;
+                line-height: 60px;
+                padding: 25px 8px 3px 3px;
+            }
+        }
+
+        &.header {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            color: $white;
+            background-color: $black;
+            margin-bottom: 30px;
+
+            & > img {
+                width: 100%;
+                -webkit-filter: blur(15px);
+                -ms-filter: blur(15px);
+                filter: blur(15px);
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            h1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                font-weight: 200;
+
+                text-align: center;
+            }
+        }
+
+        .date, .venue {
+            font-size: 20px;
+        }
+    }
 }
+

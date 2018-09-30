@@ -6838,6 +6838,56 @@ p {
   padding-bottom: 30px;
 }
 
+.calendar .calendar-show {
+  line-height: 2em;
+  font-size: 16px;
+}
+
+.calendar .calendar-show p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.calendar .calendar-show p:first-of-type:first-letter {
+  font-size: 100px;
+  float: left;
+  line-height: 60px;
+  padding: 25px 8px 3px 3px;
+}
+
+.calendar .calendar-show.header {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  color: #FFF;
+  background-color: #444;
+  margin-bottom: 30px;
+}
+
+.calendar .calendar-show.header > img {
+  width: 100%;
+  -webkit-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.calendar .calendar-show.header h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: 200;
+  text-align: center;
+}
+
+.calendar .calendar-show .date,
+.calendar .calendar-show .venue {
+  font-size: 20px;
+}
+
 .icon-list .icon-list-item {
   margin: 30px 0;
 }

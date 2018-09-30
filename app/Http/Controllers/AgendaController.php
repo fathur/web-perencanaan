@@ -24,6 +24,8 @@ class AgendaController extends Controller
 
     public function show($slug)
     {
-        return view('agenda.show');
+        $agenda = Agenda::slug($slug)->first();
+
+        return view('agenda.show', compact('agenda'));
     }
 }
