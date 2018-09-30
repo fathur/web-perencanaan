@@ -10,6 +10,7 @@
 
         @foreach($news as $newsItem)
 
+            {{--{{dd($newsItem->toArray())}}--}}
             <div class="col-sm-4">
                 <img src="" alt="" class="img-responsive">
 
@@ -23,12 +24,18 @@
                 </div>
 
                 <div class="paragraph">
-                    {{$newsItem->post_content}}
+                    {{$newsItem->excerpt}}
                 </div>
 
                 <a href="{{url('berita/'. $newsItem->slug)}}">Selengkapnya</a>
             </div>
 
         @endforeach
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            {{ $news->links() }}
+        </div>
     </div>
 </div>

@@ -17,7 +17,7 @@ class NewsController extends Controller
     {
         $news = News::with(['author','thumbnail'])->published()
             ->orderBy('post_date','desc')
-            ->take(3)->get();
+            ->paginate(10);
 
         return view('news.index', compact('news'));
     }

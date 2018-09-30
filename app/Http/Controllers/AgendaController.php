@@ -15,11 +15,10 @@ class AgendaController extends Controller
 {
     public function index()
     {
-        $agenda = Agenda::published()->get();
+        $agendas = Agenda::published()
+            ->paginate(10);
 
-        dd($agenda[0]->acf->dateTimePicker('date'));
-
-        return view('agenda.index');
+        return view('agenda.index', compact('agendas'));
 
     }
 

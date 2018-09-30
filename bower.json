@@ -1,0 +1,22 @@
+{
+  "name": "Perencanaan PUPR",
+  "description": "Website Perencanaan PUPR",
+  "main": "",
+  "authors": [
+    "hi.fathur.rohman@gmail.com"
+  ],
+  "license": "Propietary",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullcalendar": "^3.9.0",
+    "moment": "^2.22.2"
+  }
+}

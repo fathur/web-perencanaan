@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Model\Agenda;
+use App\Model\News;
 use Carbon\Carbon;
 use Corcel\Model\Post;
 
@@ -14,7 +15,7 @@ class HomeController extends Controller
     {
 
 
-        $news = Post::with(['author','thumbnail'])->published()
+        $news = News::with(['author','thumbnail'])->published()
             ->orderBy('post_date','desc')
             ->take(3)->get();
 
