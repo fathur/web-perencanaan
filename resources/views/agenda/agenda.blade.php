@@ -6,11 +6,11 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row calendar">
 
         @foreach($agendas as $agenda)
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 calendar-item">
                 <div class="image-wrapper">
 
                     <div class="image">
