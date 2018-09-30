@@ -6,13 +6,12 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row posts">
 
         @foreach($news as $newsItem)
 
-            {{--{{dd($newsItem->toArray())}}--}}
-            <div class="col-sm-4">
-                <img src="" alt="" class="img-responsive">
+            <div class="col-sm-4 posts-item">
+                <img src="{{$newsItem->image}}" alt="{{$newsItem->title}}" class="img-responsive">
 
                 <a href="{{url('berita/'. $newsItem->slug)}}">
                     <h3>{{$newsItem->post_title}}</h3>
@@ -27,7 +26,7 @@
                     {{$newsItem->excerpt}}
                 </div>
 
-                <a href="{{url('berita/'. $newsItem->slug)}}">Selengkapnya</a>
+                <a href="{{url('berita/'. $newsItem->slug)}}" class="btn btn-primary btn-sm read-more">Selengkapnya</a>
             </div>
 
         @endforeach

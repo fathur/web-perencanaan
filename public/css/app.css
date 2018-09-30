@@ -6655,22 +6655,85 @@ nav.navbar-pu .navbar-nav > li > a {
 
 body {
   padding-top: 110px;
-  background-color: #FDFFFC;
+  background-color: #FFF;
 }
 
 .wrapper-content {
   min-height: 500px;
 }
 
+.section {
+  padding: 30px 0;
+}
+
+.section.section-dark {
+  background-color: #dcdde1;
+}
+
+.section.section-light {
+  background-color: #FFF;
+}
+
+.posts .posts-item a {
+  color: #444;
+}
+
+.posts .posts-item a:hover,
+.posts .posts-item a:visited,
+.posts .posts-item a:focus {
+  text-decoration: none;
+}
+
+.posts .posts-item .img-responsive {
+  min-width: 100%;
+}
+
+.posts .posts-item .read-more {
+  margin-top: 15px;
+  color: #FFF;
+}
+
+.icon-list .icon-list-item {
+  margin: 30px 0;
+}
+
+.icon-list .icon-list-item a {
+  display: block;
+}
+
+.icon-list .icon-list-item a:active,
+.icon-list .icon-list-item a:hover,
+.icon-list .icon-list-item a:visited,
+.icon-list .icon-list-item a:focus {
+  text-decoration: none;
+}
+
+.icon-list .icon-list-item a svg {
+  color: #0097e6;
+}
+
+.icon-list .icon-list-item a h3,
+.icon-list .icon-list-item a h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.icon-list .icon-list-item a p {
+  color: #515151;
+}
+
 .footer.footer-top {
-  color: #FDFFFC;
+  color: #FFF;
   padding: 15px 0;
-  background-color: #022440;
+  background-color: #515151;
 }
 
 .footer.footer-bottom {
-  color: #FDFFFC;
+  color: #FFF;
   padding: 5px 0;
-  background-color: #011627;
+  background-color: #444;
 }
 

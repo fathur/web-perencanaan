@@ -7,7 +7,7 @@
     </div>
 
 
-    <div class="container-fluid section section-black">
+    <div class="container-fluid section section-dark">
         @include('news.news')
     </div>
 

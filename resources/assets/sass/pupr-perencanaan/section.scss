@@ -1,0 +1,14 @@
+@import "../variables";
+
+.section {
+    padding: 30px 0;
+
+    &.section-dark {
+        background-color: $white-gray-2;
+    }
+
+    &.section-light {
+        background-color: $white;
+
+    }
+}

@@ -1,0 +1,26 @@
+@import "../variables";
+
+.posts {
+
+    .posts-item {
+
+        a {
+            color: $black;
+
+            &:hover,
+            &:visited,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+
+        .img-responsive {
+            min-width: 100%;
+        }
+
+        .read-more {
+            margin-top: 15px;
+            color: $white;
+        }
+    }
+}

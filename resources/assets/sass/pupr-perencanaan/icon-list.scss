@@ -1,0 +1,40 @@
+.icon-list {
+
+    .icon-list-item {
+        margin: 30px 0;
+
+        a {
+            display: block;
+
+            &:active, &:hover, &:visited, &:focus {
+                text-decoration: none;
+            }
+
+            svg {
+                color: $blue-light;
+            }
+
+            //.subtitle {
+            //  font-size: 16px;
+            //  font-weight: 500;
+            //  color: $gray;
+            //  font-style: italic;
+            //  margin-top: 15px;
+            //}
+
+            h3, h4 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                color: $black;
+                //text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: lighten($black, 5%);
+            }
+        }
+
+    }
+}
