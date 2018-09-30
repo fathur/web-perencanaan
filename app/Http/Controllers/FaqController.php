@@ -9,10 +9,14 @@
 namespace App\Http\Controllers;
 
 
+use App\Model\Faq;
+
 class FaqController extends Controller
 {
     public function index()
     {
-        return view('faq.index');
+        $faqs = Faq::published()->get();
+
+        return view('faq.index', compact('faqs'));
     }
 }
