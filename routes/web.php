@@ -29,39 +29,43 @@ Route::prefix('agenda')->group(function () {
 });
 
 Route::prefix('produk')->group(function () {
-    Route::get('hukum', 'ProductController@laws');
+    Route::get('hukum', 'ProductController@laws')->name('product.law.show');
     Route::get('hukum/{productSlug}', 'ProductController@showLaw');
 
-    Route::get('pedoman', 'ProductController@handBooks');
+    Route::get('pedoman', 'ProductController@handBooks')->name('product.hand-book.show');
     Route::get('pedoman/{productSlug}', 'ProductController@showHandBook');
 
-    Route::get('panduan', 'ProductController@guidelines');
+    Route::get('panduan', 'ProductController@guidelines')->name('product.guideline.show');
     Route::get('panduan/{productSlug}', 'ProductController@showGuideline');
 
-    Route::get('profil', 'ProductController@profiles');
+    Route::get('profil', 'ProductController@profiles')->name('product.profile.show');
     Route::get('profil/{productSlug}', 'ProductController@showProfile');
 
-    Route::get('kegiatan', 'ProductController@activities');
+    Route::get('kegiatan', 'ProductController@activities')->name('product.activity.show');
     Route::get('kegiatan/{productSlug}', 'ProductController@showActivity');
 
-    Route::get('buletin', 'ProductController@bulletins');
+
+    Route::get('laporan', 'ProductController@reports')->name('product.report.show');
+    Route::get('laporan/{reportSlug}', 'ProductController@showReport');
+
+    Route::get('buletin', 'ProductController@bulletins')->name('product.bulletin.show');
     Route::get('buletin/{productSlug}', 'ProductController@showBulletin');
 
 });
 
 Route::prefix('galeri')->group(function () {
-    Route::get('foto', 'GalleryController@photos')->name('gallery.photo.index');
+    Route::get('foto', 'GalleryController@photos')->name('photo.index');
     Route::get('foto/{photoId}', 'GalleryController@showPhoto');
 
-    Route::get('video', 'GalleryController@videos');
+    Route::get('video', 'GalleryController@videos')->name('video.index');
     Route::get('video/{videoId}', 'GalleryController@showVideo');
 
-    Route::get('poster', 'GalleryController@posters');
+    Route::get('poster', 'GalleryController@posters')->name('poster.index');
     Route::get('poster/{posterId}', 'GalleryController@showPoster');
 
 });
 
-Route::get('faq', 'FaqController@index');
-Route::get('kontak', 'ContactController@show');
+Route::get('faq', 'FaqController@index')->name('faq.index');
+Route::get('kontak', 'ContactController@show')->name('contact.show');
 
 

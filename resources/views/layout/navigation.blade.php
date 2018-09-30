@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{url('/')}}">
                 <img src="{{asset('images/logo.jpg')}}" alt="PUPR">
 
                 <div class="brand-text">
@@ -21,17 +21,45 @@
 
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                {{--<li class="active"><a href="#">Home</a></li>--}}
-                {{--<li><a href="#">About</a></li>--}}
-                {{--<li><a href="#">Contact</a></li>--}}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Profil <span class="caret"></span></a>
+                       aria-expanded="false">Tentang Kami <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{url('profil/organisasi')}}">Organisasi</a></li>
-                        <li><a href="{{url('profil/tupoksi')}}">Tupoksi</a></li>
+                        <li><a href="{{route('organization.show')}}">Organisasi</a></li>
+                        <li><a href="{{route('tasks.show')}}">Tupoksi</a></li>
                     </ul>
                 </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Produk <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{route('product.law.show')}}">Produk Hukum</a></li>
+                        <li><a href="{{route('product.hand-book.show')}}">Buku Pedoman</a></li>
+                        <li><a href="{{route('product.guideline.show')}}">Buku Panduan</a></li>
+                        <li><a href="{{route('product.profile.show')}}">Buku Profil</a></li>
+                        <li><a href="{{route('product.activity.show')}}">Buku Kegiatan</a></li>
+                        <li><a href="{{route('product.report.show')}}">Laporan Kinerja</a></li>
+                        <li><a href="{{route('product.bulletin.show')}}">Buletin</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{route('news.index')}}">Berita</a></li>
+                <li><a href="{{route('agenda.index')}}">Agenda</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Galeri <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{route('photo.index')}}">Foto</a></li>
+                        <li><a href="{{route('video.index')}}">Video</a></li>
+                        <li><a href="{{route('poster.index')}}">Poster</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{route('faq.index')}}">FAQ</a></li>
+                <li><a href="{{route('contact.show')}}">Kontak</a></li>
+
             </ul>
         </div>
     </div>
