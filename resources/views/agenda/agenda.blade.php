@@ -39,10 +39,4 @@
         @endforeach
 
     </div>
-
-    <div class="row">
-        <div class="col-sm-12">
-            {{$agendas->links()}}
-        </div>
-    </div>
 </div>

@@ -12,6 +12,14 @@
     </div>--}}
 
     @include('agenda.agenda')
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {{$agendas->links()}}
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts')
