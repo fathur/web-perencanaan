@@ -2,4 +2,6 @@
 
 [ ] Breadcrumbs
 
-[ ] 
+[ ] Pagination
+
+[ ] Other article

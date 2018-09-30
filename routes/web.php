@@ -32,10 +32,10 @@ Route::prefix('produk')->group(function () {
     Route::get('hukum', 'ProductController@laws')->name('product.law.show');
     Route::get('hukum/{productSlug}', 'ProductController@showLaw');
 
-    Route::get('pedoman', 'ProductController@handBooks')->name('product.hand-book.show');
+    Route::get('buku-pedoman', 'ProductController@handBooks')->name('product.hand-book.show');
     Route::get('pedoman/{productSlug}', 'ProductController@showHandBook');
 
-    Route::get('panduan', 'ProductController@guidelines')->name('product.guideline.show');
+    Route::get('buku-panduan', 'ProductController@guidelines')->name('product.guideline.show');
     Route::get('panduan/{productSlug}', 'ProductController@showGuideline');
 
     Route::get('profil', 'ProductController@profiles')->name('product.profile.show');
