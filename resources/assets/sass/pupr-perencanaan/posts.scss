@@ -4,6 +4,8 @@
 
     .posts-item {
 
+        height: 500px;
+
         a {
             color: $black;
 
@@ -11,6 +13,17 @@
             &:visited,
             &:focus {
                 text-decoration: none;
+            }
+        }
+
+        .image-container {
+            height: 230px;
+            overflow: hidden;
+
+            &.icon {
+                border: 5px solid $black;
+                border-radius: 15px;
+                padding: 40px 0;
             }
         }
 

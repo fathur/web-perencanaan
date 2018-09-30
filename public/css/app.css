@@ -6674,6 +6674,10 @@ body {
   background-color: #FFF;
 }
 
+.posts .posts-item {
+  height: 500px;
+}
+
 .posts .posts-item a {
   color: #444;
 }
@@ -6682,6 +6686,17 @@ body {
 .posts .posts-item a:visited,
 .posts .posts-item a:focus {
   text-decoration: none;
+}
+
+.posts .posts-item .image-container {
+  height: 230px;
+  overflow: hidden;
+}
+
+.posts .posts-item .image-container.icon {
+  border: 5px solid #444;
+  border-radius: 15px;
+  padding: 40px 0;
 }
 
 .posts .posts-item .img-responsive {

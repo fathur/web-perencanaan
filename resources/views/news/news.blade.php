@@ -11,7 +11,16 @@
         @foreach($news as $newsItem)
 
             <div class="col-sm-4 posts-item">
-                <img src="{{$newsItem->image}}" alt="{{$newsItem->title}}" class="img-responsive">
+
+                @if(!is_null($newsItem->image))
+                    <div class="image-container">
+                        <img src="{{$newsItem->image}}" alt="{{$newsItem->title}}" class="img-responsive">
+                    </div>
+                @else
+                    <div class="image-container text-center icon">
+                        <i class="fal fa-image fa-10x"></i>
+                    </div>
+                @endif
 
                 <a href="{{url('berita/'. $newsItem->slug)}}">
                     <h3>{{$newsItem->post_title}}</h3>
@@ -23,7 +32,7 @@
                 </div>
 
                 <div class="paragraph">
-                    {{$newsItem->excerpt}}
+                    {{str_limit($newsItem->excerpt, 200)}}
                 </div>
 
                 <a href="{{url('berita/'. $newsItem->slug)}}" class="btn btn-primary btn-sm read-more">Selengkapnya</a>
