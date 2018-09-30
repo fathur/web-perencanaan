@@ -17,5 +17,8 @@ mix.copy('node_modules/@fortawesome/fontawesome-pro/webfonts', 'resources/assets
     .copy('bower_components/moment/min','public/vendor/moment')
     .copy('bower_components/jquery/dist','public/vendor/jquery')
     .sass('resources/assets/sass/app.scss', 'public/css')
-    .babel(['resources/assets/js/navigation.js'], 'public/js/scripts.js')
+    .babel([
+        'resources/assets/js/navigation.js',
+        'resources/assets/js/posts.js'
+    ], 'public/js/scripts.js')
     .version();

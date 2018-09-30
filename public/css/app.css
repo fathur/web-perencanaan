@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);/*!
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);/*!
  * Font Awesome Pro 5.3.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
  */
@@ -6658,6 +6658,19 @@ body {
   background-color: #FFF;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
 .wrapper-content {
   min-height: 500px;
 }
@@ -6706,6 +6719,51 @@ body {
 .posts .posts-item .read-more {
   margin-top: 15px;
   color: #FFF;
+}
+
+.posts .posts-show {
+  line-height: 2em;
+  font-size: 16px;
+}
+
+.posts .posts-show p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.posts .posts-show p:first-of-type:first-letter {
+  font-size: 100px;
+  float: left;
+  line-height: 60px;
+  padding: 25px 8px 3px 3px;
+}
+
+.posts .posts-show.header {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  color: #FFF;
+  background-color: #444;
+  margin-bottom: 30px;
+}
+
+.posts .posts-show.header > img {
+  width: 100%;
+  -webkit-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.posts .posts-show.header h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: 200;
+  text-align: center;
 }
 
 .calendar .calendar-item .image-wrapper {

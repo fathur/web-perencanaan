@@ -36,3 +36,7 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+
+var height = $(window).height();
+
+// $('.posts-show.header').height(height - 110);
