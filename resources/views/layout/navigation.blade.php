@@ -23,10 +23,21 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Tentang Kami <span class="caret"></span></a>
+                       aria-expanded="false">Profil <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{route('organization.show')}}">Organisasi</a></li>
-                        <li><a href="{{route('tasks.show')}}">Tupoksi</a></li>
+                        <li><a href="{{route('mission.show')}}">Visi dan Misi</a></li>
+                        <li><a href="{{route('organization.show')}}">Struktur Organisasi</a></li>
+                        <li><a href="{{route('tasks.show')}}">Tugas dan Fungsi</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Program dan Kegiatan <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{route('program.index')}}">Program</a></li>
+                        <li><a href="{{route('activity.index')}}">Kegiatan</a></li>
+                        <li><a href="{{route('agenda.index')}}">agenda</a></li>
                     </ul>
                 </li>
 
@@ -38,14 +49,14 @@
                         <li><a href="{{route('product.hand-book.show')}}">Buku Pedoman</a></li>
                         <li><a href="{{route('product.guideline.show')}}">Buku Panduan</a></li>
                         <li><a href="{{route('product.profile.show')}}">Buku Profil</a></li>
-                        <li><a href="{{route('product.activity.show')}}">Buku Kegiatan</a></li>
+                        {{--<li><a href="{{route('product.activity.show')}}">Buku Kegiatan</a></li>--}}
                         <li><a href="{{route('product.report.show')}}">Laporan Kinerja</a></li>
                         <li><a href="{{route('product.bulletin.show')}}">Buletin</a></li>
                     </ul>
                 </li>
 
                 <li><a href="{{route('news.index')}}">Berita</a></li>
-                <li><a href="{{route('agenda.index')}}">Agenda</a></li>
+                {{--<li><a href="{{route('agenda.index')}}">Agenda</a></li>--}}
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"

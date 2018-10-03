@@ -13,6 +13,15 @@ use Corcel\Model\Page;
 
 class ProfileController extends Controller
 {
+    public function mission()
+    {
+
+        $post = Page::slug('visi-misi')->first();
+
+        if (is_null($post)) abort(404);
+
+        return view('profile.show', compact('post'));
+    }
 
     public function organization()
     {

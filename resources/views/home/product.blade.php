@@ -28,14 +28,14 @@
         </div>
 
 
-        <div class="col-sm-4 icon-list-item text-center">
+        {{--<div class="col-sm-4 icon-list-item text-center">
             <a href="{{route('product.activity.show')}}">
                 <i class="fal fa-whistle fa-4x"></i>
                 <h4>Buku Kegiatan</h4>
                 <p>Produk hukum memberitahu Anda tentang hukum-hukum yang berlaku di kementerian
                     PUPR</p>
             </a>
-        </div>
+        </div>--}}
 
         <div class="col-sm-4 icon-list-item text-center">
             <a href="{{route('product.report.show')}}">

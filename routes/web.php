@@ -14,8 +14,9 @@
 Route::get('/', 'HomeController@index');
 
 Route::prefix('profil')->group(function () {
+    Route::get('visi-misi', 'ProfileController@mission')->name('mission.show');
     Route::get('organisasi', 'ProfileController@organization')->name('organization.show');
-    Route::get('tupoksi', 'ProfileController@tasks')->name('tasks.show');
+    Route::get('tugas-dan-fungsi', 'ProfileController@tasks')->name('tasks.show');
 });
 
 Route::prefix('berita')->group(function () {
@@ -23,10 +24,25 @@ Route::prefix('berita')->group(function () {
     Route::get('{newsSlug}', 'NewsController@show')->name('news.show');
 });
 
-Route::prefix('agenda')->group(function () {
-    Route::get('/', 'AgendaController@index')->name('agenda.index');
-    Route::get('{agendaSlug}', 'AgendaController@show')->name('agenda.show');
+Route::prefix('program-kegiatan')->group(function() {
+
+    Route::prefix('program')->group(function () {
+        Route::get('/', 'ProgramController@index')->name('program.index');
+        Route::get('{programSlug}', 'ProgramController@show')->name('program.show');
+    });
+
+    Route::prefix('kegiatan')->group(function () {
+        Route::get('/', 'ActivityController@index')->name('activity.index');
+        Route::get('{activitySlug}', 'ActivityController@show')->name('activity.show');
+    });
+
+    Route::prefix('agenda')->group(function () {
+        Route::get('/', 'AgendaController@index')->name('agenda.index');
+        Route::get('{agendaSlug}', 'AgendaController@show')->name('agenda.show');
+    });
 });
+
+
 
 Route::prefix('produk')->group(function () {
     Route::get('hukum', 'ProductController@laws')->name('product.law.show');
@@ -41,8 +57,8 @@ Route::prefix('produk')->group(function () {
     Route::get('profil', 'ProductController@profiles')->name('product.profile.show');
     Route::get('profil/{productSlug}', 'ProductController@showProfile');
 
-    Route::get('kegiatan', 'ProductController@activities')->name('product.activity.show');
-    Route::get('kegiatan/{productSlug}', 'ProductController@showActivity');
+//    Route::get('kegiatan', 'ProductController@activities')->name('product.activity.show');
+//    Route::get('kegiatan/{productSlug}', 'ProductController@showActivity');
 
 
     Route::get('laporan', 'ProductController@reports')->name('product.report.show');
