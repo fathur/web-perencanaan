@@ -15,6 +15,6 @@ class RegulationController extends Controller
             ->paginate(10);
 
         return view('product.index', compact('posts'))->with([
-            'title' => 'LAKIP']);
+            'title' => 'Peraturan']);
     }
 }
