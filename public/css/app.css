@@ -6653,6 +6653,18 @@ nav.navbar-pu .navbar-nav > li > a {
   top: -110px !important;
 }
 
+.slider-container {
+  padding-bottom: 0 !important;
+}
+
+.slider .section {
+  padding-bottom: 0 !important;
+}
+
+.slider .slide > .fp-tableCell > img {
+  width: 100%;
+}
+
 body {
   padding-top: 110px;
   background-color: #FFF;

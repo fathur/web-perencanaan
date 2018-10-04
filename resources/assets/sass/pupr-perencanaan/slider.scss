@@ -1,0 +1,18 @@
+.slider-container {
+    padding-bottom: 0 !important;
+}
+
+.slider {
+
+    .section {
+        padding-bottom: 0 !important;
+    }
+    
+    .slide {
+        & > .fp-tableCell {
+            & > img {
+                width: 100%;
+            }
+        }
+    }
+}

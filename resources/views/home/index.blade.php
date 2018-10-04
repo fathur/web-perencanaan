@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <div class="container-fluid">
-        <div id="slider">
+    <div class="container-fluid section section-dark slider-container">
+        <div id="slider" class="slider">
             <div class="section">
 
                 @foreach($sliders as $slider)

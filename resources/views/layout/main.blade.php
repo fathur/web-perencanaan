@@ -11,7 +11,7 @@
     <title>Perencanaan PU</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset(mix('css/app.css'))}}">
 
     @stack('styles')
 
