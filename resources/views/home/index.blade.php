@@ -2,6 +2,19 @@
 
 @section('content')
 
+    <div class="container-fluid">
+        <div id="slider">
+            <div class="section">
+
+                @foreach($sliders as $slider)
+                    <div class="slide">
+                        <img src="{{$slider->image}}" alt="{{$slider->title}}">
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid section section-light">
         @include('home.product')
     </div>
@@ -16,3 +29,21 @@
         @include('agenda.agenda')
     </div>
 @endsection
+
+
+@push('styles')
+    <link rel="stylesheet" href="{{asset('vendor/fullpage.js/fullpage.min.css')}}">
+@endpush
+
+@push('scripts')
+    <script src="{{asset('vendor/fullpage.js/fullpage.min.js')}}"></script>
+@endpush
+
+@push('script')
+    <script>
+        $('#slider').fullpage({
+            autoScrolling: false,
+            fitToSection: false
+        });
+    </script>
+@endpush

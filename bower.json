@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "fullcalendar": "^3.9.0",
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "fullpage.js": "fullpage#^3.0.3"
   }
 }
