@@ -1,11 +1,9 @@
 <h3>Produk</h3>
 
 <ul class="list-unstyled">
-    <li><a href="{{route('product.law.show')}}">Produk Hukum</a></li>
-    <li><a href="{{route('product.hand-book.show')}}">Buku Pedoman</a></li>
-    <li><a href="{{route('product.guideline.show')}}">Buku Panduan</a></li>
-    <li><a href="{{route('product.profile.show')}}">Buku Profil</a></li>
-    <li><a href="{{route('product.activity.show')}}">Buku Kegiatan</a></li>
-    <li><a href="{{route('product.report.show')}}">Laporan Kinerja</a></li>
-    <li><a href="{{route('product.bulletin.show')}}">Buletin</a></li>
+    <li><a href="{{route('renstra.index')}}">Renstra</a></li>
+    <li><a href="{{route('lakip.index')}}">LAKIP</a></li>
+    <li><a href="{{route('regulation.index')}}">Peraturan</a></li>
+    <li><a href="{{route('guideline.index')}}">Buku Pedoman/Panduan</a></li>
+    <li><a href="{{route('application.index')}}">Aplikasi</a></li>
 </ul>

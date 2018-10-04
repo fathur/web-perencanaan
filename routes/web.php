@@ -21,51 +21,58 @@ Route::prefix('profil')->group(function () {
 
 Route::prefix('berita')->group(function () {
     Route::get('/', 'NewsController@index')->name('news.index');
-    Route::get('{newsSlug}', 'NewsController@show')->name('news.show');
+    Route::get('{slug}', 'NewsController@show')->name('news.show');
 });
 
 Route::prefix('program-kegiatan')->group(function() {
 
     Route::prefix('program')->group(function () {
         Route::get('/', 'ProgramController@index')->name('program.index');
-        Route::get('{programSlug}', 'ProgramController@show')->name('program.show');
+        Route::get('{slug}', 'ProgramController@show')->name('program.show');
     });
 
     Route::prefix('kegiatan')->group(function () {
         Route::get('/', 'ActivityController@index')->name('activity.index');
-        Route::get('{activitySlug}', 'ActivityController@show')->name('activity.show');
+        Route::get('{slug}', 'ActivityController@show')->name('activity.show');
     });
 
     Route::prefix('agenda')->group(function () {
         Route::get('/', 'AgendaController@index')->name('agenda.index');
-        Route::get('{agendaSlug}', 'AgendaController@show')->name('agenda.show');
+        Route::get('{slug}', 'AgendaController@show')->name('agenda.show');
     });
 });
 
 
 
 Route::prefix('produk')->group(function () {
-    Route::get('hukum', 'ProductController@laws')->name('product.law.show');
-    Route::get('hukum/{productSlug}', 'ProductController@showLaw');
 
-    Route::get('buku-pedoman', 'ProductController@handBooks')->name('product.hand-book.show');
-    Route::get('pedoman/{productSlug}', 'ProductController@showHandBook');
+    Route::get('renstra','RenstraController@index')->name('renstra.index');
+    Route::get('lakip','LakipController@index')->name('lakip.index');
+    Route::get('peraturan','RegulationController@index')->name('regulation.index');
+    Route::get('buku-pedoman','GuidelineController@index')->name('guideline.index');
+    Route::get('aplikasi','ApplicationController@index')->name('application.index');
 
-    Route::get('buku-panduan', 'ProductController@guidelines')->name('product.guideline.show');
-    Route::get('panduan/{productSlug}', 'ProductController@showGuideline');
-
-    Route::get('profil', 'ProductController@profiles')->name('product.profile.show');
-    Route::get('profil/{productSlug}', 'ProductController@showProfile');
+//    Route::get('hukum', 'ProductController@laws')->name('product.law.show');
+//    Route::get('hukum/{productSlug}', 'ProductController@showLaw');
+//
+//    Route::get('buku-pedoman', 'ProductController@handBooks')->name('product.hand-book.show');
+//    Route::get('pedoman/{productSlug}', 'ProductController@showHandBook');
+//
+//    Route::get('buku-panduan', 'ProductController@guidelines')->name('product.guideline.show');
+//    Route::get('panduan/{productSlug}', 'ProductController@showGuideline');
+//
+//    Route::get('profil', 'ProductController@profiles')->name('product.profile.show');
+//    Route::get('profil/{productSlug}', 'ProductController@showProfile');
 
 //    Route::get('kegiatan', 'ProductController@activities')->name('product.activity.show');
 //    Route::get('kegiatan/{productSlug}', 'ProductController@showActivity');
 
-
-    Route::get('laporan', 'ProductController@reports')->name('product.report.show');
-    Route::get('laporan/{reportSlug}', 'ProductController@showReport');
-
-    Route::get('buletin', 'ProductController@bulletins')->name('product.bulletin.show');
-    Route::get('buletin/{productSlug}', 'ProductController@showBulletin');
+//
+//    Route::get('laporan', 'ProductController@reports')->name('product.report.show');
+//    Route::get('laporan/{reportSlug}', 'ProductController@showReport');
+//
+//    Route::get('buletin', 'ProductController@bulletins')->name('product.bulletin.show');
+//    Route::get('buletin/{productSlug}', 'ProductController@showBulletin');
 
 });
 
@@ -83,5 +90,7 @@ Route::prefix('galeri')->group(function () {
 
 Route::get('faq', 'FaqController@index')->name('faq.index');
 Route::get('kontak', 'ContactController@show')->name('contact.show');
+
+Route::get('download/{identifier}', 'DownloaderController@force')->name('download.force');
 
 
