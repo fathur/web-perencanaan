@@ -14,8 +14,12 @@
                 <div class="image-wrapper">
 
                     <div class="image">
-                        <img src="{{$agenda->thumbnail->attachment->url}}"
-                             alt="{{$agenda->thumbnail->attachment->caption}}" class="img-responsive">
+
+                        @if(isset($agenda->thumbnail))
+                            <img src="{{$agenda->thumbnail->attachment->url}}"
+                                 alt="{{$agenda->thumbnail->attachment->caption}}" class="img-responsive">
+
+                        @endif
                     </div>
 
                     <div class="date-wrapper">
