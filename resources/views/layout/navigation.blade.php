@@ -14,6 +14,7 @@
 
                 <div class="brand-text">
                     <span class="title">Kementerian Pekerjaan Umum dan Perumahan Rakyat</span>
+                    <span class="title">Direktorat Jenderal Penyediaan Perumahan</span>
                     <span class="subtitle">Direktorat Perencanaan</span>
                 </div>
             </a>
@@ -33,7 +34,7 @@
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Program dan Kegiatan <span class="caret"></span></a>
+                       aria-expanded="false">Program Kegiatan <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{route('program.index')}}">Program</a></li>
                         <li><a href="{{route('activity.index')}}">Kegiatan</a></li>
