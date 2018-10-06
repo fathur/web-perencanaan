@@ -29,8 +29,8 @@ nav.navbar-pu {
         .navbar-nav {
             @media (min-width: 768px) {
                 float: none;
-                //margin: 0 auto;
-                margin: 0 0 0 180px;
+                margin: 0 auto;
+                //margin: 0 0 0 180px;
                 display: table;
                 table-layout: fixed;
 
@@ -38,10 +38,11 @@ nav.navbar-pu {
         }
 
         .navbar-header {
+            display: none;
 
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s, opacity 0.5s linear;
+            //visibility: hidden;
+            //opacity: 0;
+            //transition: visibility 0s, opacity 0.5s linear;
         }
 
         .navbar-brand.small {
@@ -49,7 +50,7 @@ nav.navbar-pu {
 
             & > img {
                 transition: all 0.5s ease;
-
+                transition-delay: 1s;
                 width: 85px;
                 margin-top: -85px;
             }
@@ -68,10 +69,10 @@ nav.navbar-pu {
         }
 
         .navbar-header {
-
-            visibility: visible;
-            opacity: 1;
-            transition: visibility 0s, opacity 0.5s linear;
+            display: block;
+            //visibility: visible;
+            //opacity: 1;
+            //transition: visibility 0s, opacity 0.5s linear;
         }
 
         .navbar-nav {
@@ -83,11 +84,19 @@ nav.navbar-pu {
         .navbar-brand.small {
             padding-top: 0;
 
+            @media (max-width: 767px) {
+                padding-left: 0;
+            }
+
             & > img {
                 transition: all 0.5s ease;
-
-                width: 85px;
+                transition-delay: 1s;
                 margin-top: 0;
+                width: 50px;
+
+                @media (min-width: 768px) {
+                    width: 85px;
+                }
             }
         }
     }
@@ -177,7 +186,7 @@ nav.navbar-pu {
                 padding-top: $nav-padding-anchor;
                 padding-bottom: $nav-padding-anchor;
 
-                text-transform: uppercase;
+                //text-transform: uppercase;
                 font-weight: 700;
                 letter-spacing: 1px;
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -224,6 +233,13 @@ nav.navbar-pu {
                     }
                 }
             }
+        }
+    }
+
+    .navbar-toggle {
+        .icon-bar {
+            color: $white;
+            background-color: $white;
         }
     }
 }
