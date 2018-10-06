@@ -38,3 +38,7 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
+let baseUrl = $('meta[name=url]').attr('content');
+
+particlesJS.load('logo', baseUrl + '/vendor/particle.js/particle-header.json', function() {
+});

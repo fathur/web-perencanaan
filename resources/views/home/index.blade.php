@@ -37,14 +37,11 @@
 
 @push('scripts')
     <script src="{{asset('vendor/fullpage.js/fullpage.min.js')}}"></script>
-    <script src="{{asset('vendor/particle.js/particles.min.js')}}"></script>
 @endpush
 
 @push('script')
     <script>
-        particlesJS.load('logo', '{{asset('vendor/particle.js/particle-header.json')}}', function() {
-            // console.log('callback - particles.js config loaded');
-        });
+
 
 
         $('#slider').fullpage({

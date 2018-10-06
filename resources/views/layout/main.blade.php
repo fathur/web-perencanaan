@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="url" content="{{url('/')}}">
     <link rel="icon" href="../../favicon.ico">
 
     <title>Perencanaan PU</title>
@@ -41,6 +42,7 @@
 <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="{{asset('vendor/particle.js/particles.min.js')}}"></script>
 
 @stack('scripts')
 

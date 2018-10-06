@@ -37,6 +37,10 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
+var baseUrl = $('meta[name=url]').attr('content');
+
+particlesJS.load('logo', baseUrl + '/vendor/particle.js/particle-header.json', function () {});
+
 var height = $(window).height();
 
 // $('.posts-show.header').height(height - 110);
