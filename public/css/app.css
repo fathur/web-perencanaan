@@ -6627,10 +6627,17 @@ nav.navbar-pu.nav-down .logo {
 @media (min-width: 768px) {
   nav.navbar-pu.nav-down .navbar-nav {
     float: none;
-    margin: 0 auto;
+    margin: 0 0 0 180px;
     display: table;
     table-layout: fixed;
   }
+}
+
+nav.navbar-pu.nav-down .navbar-header {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 nav.navbar-pu.nav-down .navbar-brand.small {
@@ -6654,6 +6661,13 @@ nav.navbar-pu.nav-up .logo {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-top: -200px !important;
+}
+
+nav.navbar-pu.nav-up .navbar-header {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 @media (min-width: 768px) {
