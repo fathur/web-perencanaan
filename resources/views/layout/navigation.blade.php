@@ -6,7 +6,7 @@
                 pu net
             </div>
             <div class="col-md-6 pull-right text-right">
-                tgl
+                {{Carbon\Carbon::now()->toDateString()}}
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
                 <div class="brand-text">
                     <span class="title">Kementerian Pekerjaan Umum dan Perumahan Rakyat</span>
                     <span class="title">Direktorat Jenderal Penyediaan Perumahan</span>
-                    <span class="subtitle">Direktorat Perencanaan</span>
+                    <span class="subtitle">Direktorat Perencanaan Penyediaan Perumahan</span>
                 </div>
             </a>
         </div>
