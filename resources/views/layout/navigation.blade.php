@@ -6,7 +6,7 @@
                 pu net
             </div>
             <div class="col-md-6 pull-right text-right">
-                {{Carbon\Carbon::now()->toDateString()}}
+                {{Carbon\Carbon::now()->format('l, j F Y')}}
             </div>
         </div>
     </div>
