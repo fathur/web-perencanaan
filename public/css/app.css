@@ -6908,11 +6908,15 @@ p {
   text-align: justify;
 }
 
-.posts .posts-show p:first-of-type:first-letter {
-  font-size: 100px;
-  float: left;
-  line-height: 60px;
-  padding: 25px 8px 3px 3px;
+.posts .posts-show h2,
+.posts .posts-show h3 {
+  margin-top: 40px;
+}
+
+.posts .posts-show h4,
+.posts .posts-show h5,
+.posts .posts-show h6 {
+  margin-top: 35px;
 }
 
 .posts .posts-show.header {
@@ -7095,6 +7099,10 @@ p {
 
 .icon-list .icon-list-item a p {
   color: #515151;
+}
+
+.footer a {
+  color: #FFF;
 }
 
 .footer.footer-top {
