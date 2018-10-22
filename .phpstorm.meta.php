@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-09-29 10:38:45.
+    * Generated on 2018-10-22 01:36:55.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -116,6 +116,9 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\Writer::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
+        'markdown' => \League\CommonMark\Converter::class,
+        'markdown.compiler' => \GrahamCampbell\Markdown\Compilers\MarkdownCompiler::class,
+        'markdown.environment' => \League\CommonMark\Environment::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'migration.creator' => \Illuminate\Database\Migrations\MigrationCreator::class,
         'migration.repository' => \Illuminate\Database\Migrations\DatabaseMigrationRepository::class,
@@ -246,6 +249,9 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\Writer::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
+        'markdown' => \League\CommonMark\Converter::class,
+        'markdown.compiler' => \GrahamCampbell\Markdown\Compilers\MarkdownCompiler::class,
+        'markdown.environment' => \League\CommonMark\Environment::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'migration.creator' => \Illuminate\Database\Migrations\MigrationCreator::class,
         'migration.repository' => \Illuminate\Database\Migrations\DatabaseMigrationRepository::class,
@@ -376,6 +382,9 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\Writer::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
+        'markdown' => \League\CommonMark\Converter::class,
+        'markdown.compiler' => \GrahamCampbell\Markdown\Compilers\MarkdownCompiler::class,
+        'markdown.environment' => \League\CommonMark\Environment::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'migration.creator' => \Illuminate\Database\Migrations\MigrationCreator::class,
         'migration.repository' => \Illuminate\Database\Migrations\DatabaseMigrationRepository::class,
@@ -506,6 +515,9 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\Writer::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
+        'markdown' => \League\CommonMark\Converter::class,
+        'markdown.compiler' => \GrahamCampbell\Markdown\Compilers\MarkdownCompiler::class,
+        'markdown.environment' => \League\CommonMark\Environment::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'migration.creator' => \Illuminate\Database\Migrations\MigrationCreator::class,
         'migration.repository' => \Illuminate\Database\Migrations\DatabaseMigrationRepository::class,
@@ -636,6 +648,9 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\Writer::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
+        'markdown' => \League\CommonMark\Converter::class,
+        'markdown.compiler' => \GrahamCampbell\Markdown\Compilers\MarkdownCompiler::class,
+        'markdown.environment' => \League\CommonMark\Environment::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'migration.creator' => \Illuminate\Database\Migrations\MigrationCreator::class,
         'migration.repository' => \Illuminate\Database\Migrations\DatabaseMigrationRepository::class,
@@ -766,6 +781,9 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\Writer::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
+        'markdown' => \League\CommonMark\Converter::class,
+        'markdown.compiler' => \GrahamCampbell\Markdown\Compilers\MarkdownCompiler::class,
+        'markdown.environment' => \League\CommonMark\Environment::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'migration.creator' => \Illuminate\Database\Migrations\MigrationCreator::class,
         'migration.repository' => \Illuminate\Database\Migrations\DatabaseMigrationRepository::class,
@@ -896,6 +914,9 @@ namespace PHPSTORM_META {
         'hash' => \Illuminate\Hashing\BcryptHasher::class,
         'log' => \Illuminate\Log\Writer::class,
         'mailer' => \Illuminate\Mail\Mailer::class,
+        'markdown' => \League\CommonMark\Converter::class,
+        'markdown.compiler' => \GrahamCampbell\Markdown\Compilers\MarkdownCompiler::class,
+        'markdown.environment' => \League\CommonMark\Environment::class,
         'memcached.connector' => \Illuminate\Cache\MemcachedConnector::class,
         'migration.creator' => \Illuminate\Database\Migrations\MigrationCreator::class,
         'migration.repository' => \Illuminate\Database\Migrations\DatabaseMigrationRepository::class,

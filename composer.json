@@ -12,6 +12,7 @@
         "barryvdh/laravel-ide-helper": "^2.5",
         "corcel/acf": "^1.1",
         "fideloper/proxy": "~3.3",
+        "graham-campbell/markdown": "^10.2",
         "jgrossi/corcel": "2.5.*",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0"

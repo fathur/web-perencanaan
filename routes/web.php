@@ -93,4 +93,6 @@ Route::get('kontak', 'ContactController@show')->name('contact.show');
 
 Route::get('download/{identifier}', 'DownloaderController@force')->name('download.force');
 
+Route::get('privacy-policy', 'PageController@privacyPolicy')->name('page.privacy');
+
 
