@@ -15,7 +15,8 @@
         "graham-campbell/markdown": "^10.2",
         "jgrossi/corcel": "2.5.*",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "laravelium/sitemap": "2.7.*"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
