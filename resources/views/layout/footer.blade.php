@@ -12,8 +12,8 @@
             </div>
             <div class="col-md-6">
                 <ul class="list-unstyled">
-                    <li><a href="#">Sitemap</a></li>
-                    <li><a href="{{route('page.privacy')}}">Privacy Policy</a></li>
+                    <li><a href="{{route('sitemap')}}">Sitemap</a></li>
+                    <li><a href="{{route('privacy')}}">Privacy Policy</a></li>
                     <li><a href="{{route('contact.show')}}">Hubungin Kami</a></li>
                 </ul>
             </div>
