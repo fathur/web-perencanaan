@@ -42,6 +42,12 @@
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li>
+                        <a href="{{url('/')}}" style="padding-top: 8px; padding-bottom: 0;">
+                            <i class="fal fa-home fa-2x"></i>
+                        </a>
+                    </li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">Profil <i class="fal fa-caret-down"></i></a>

@@ -13,9 +13,6 @@ class PageController extends Controller
         // create sitemap
         $sitemap_posts = \App::make("sitemap");
 
-        // set cache
-//        $sitemap_posts->setCache('laravel.sitemap-posts', 3600);
-
         // add items
         $posts = Post::published()->get();
 
