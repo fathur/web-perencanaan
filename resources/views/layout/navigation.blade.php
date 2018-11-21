@@ -43,7 +43,7 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="{{url('/')}}" style="padding-top: 8px; padding-bottom: 0;">
+                        <a href="{{url('/')}}" style="padding-top: 9px; padding-bottom: 10px;">
                             <i class="fal fa-home fa-2x"></i>
                         </a>
                     </li>
